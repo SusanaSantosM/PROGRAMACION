@@ -13,28 +13,7 @@ _Boletines del 1 al 18_
 _Boletines del 18_2 al 27_
 
 
-[Boletin 18_2](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin18_2)
+## Boletines de la 3ra Evaluación
+_Boletines del 29_
 
-
-[Boletin 19](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin19)
-
-
-[Boletin 20](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin20)
-
-
-[Boletin 21](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin21)
-
-
-[Boletin 22](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin22)
-
-
-[Boletin 23](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin23)
-
-
-[Boletin 24](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin24)
-
-
-[Boletin 26](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin26)
-
-
-[Boletin 27](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin27)
+[Boletin 29](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin29)
