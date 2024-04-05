@@ -8,7 +8,7 @@ public class Ventana extends JFrame {
     //Creamos una array de tipo String de lista de colores con la lista desplegable
     private JComboBox<String> listaColores;
     //creamos un array String de colores
-    private String[] colores= {"verde","rojo","negro","azul","amarillo"};
+    private String[] colores= {"Verde","Rojo","Negro","Azul","Amarillo"};
     private JPanel panel;
 
     //Constructor
@@ -16,7 +16,7 @@ public class Ventana extends JFrame {
         super("CAMBIO EL COLOR DE FONDO"); //Ponemos titulo a la ventana
         setSize(400,400); //Dimensionamos
         setLocationRelativeTo(null); //Centramos la ventana
-        setLayout(new FlowLayout());
+        setLayout(new BorderLayout());
         setVisible(true);
 
         //Llamamos a los metodos
@@ -32,10 +32,6 @@ public class Ventana extends JFrame {
         //panel.setBackground(Color.WHITE);
         panel.setPreferredSize(new Dimension(300,300));
 
-        //Indicamos al usuario con un texto
-        JLabel textoIndicativo = new JLabel("Selecciona un color: ");
-        add(textoIndicativo);
-
         //Agregando Evento de tipo ActionListener con la lista desplegable
         listaColores = new JComboBox<>(colores);
         listaColores.addActionListener(new ActionListener() {
@@ -46,9 +42,8 @@ public class Ventana extends JFrame {
         });
 
         //Agregamos el panel a la ventana
-        add(panel, BorderLayout.NORTH);
+        add(panel, BorderLayout.CENTER);
         add(listaColores, BorderLayout.CENTER);
-        add(textoIndicativo);
     }
 
     private void cambiarColores(){
@@ -56,7 +51,7 @@ public class Ventana extends JFrame {
         String seleccionColor = (String) listaColores.getSelectedItem();
 
         //Creamos un objeto de tipo Color
-        Color color = Color.WHITE;
+        Color color;
 
         switch (seleccionColor){
             case "Verde":
