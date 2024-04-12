@@ -19,7 +19,7 @@ public class Temporizador extends JFrame{
     private JPanel panel;
     private Timer temporizador;
     private String mensaje;
-    private int contador;
+    private int contador=0;
     private boolean activa = false;
     
     public Temporizador(){
@@ -67,11 +67,11 @@ public class Temporizador extends JFrame{
             public void actionPerformed(ActionEvent ae) {
                 contador++;
         
-                if(contador <2){
+                if(contador == 1){
                     JOptionPane.showMessageDialog(null, "¡Hola!");
-                } else if(contador >=2 && contador <=4){
+                } else if(contador == 2){
                     JOptionPane.showMessageDialog(null, "Levantante!");
-                } else if(contador >=4 && contador <=6){
+                } else if(contador == 3){
                     JOptionPane.showMessageDialog(null, "y toma cafecito UwU");
                     temporizador.stop();
                 }
