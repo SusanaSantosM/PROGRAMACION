@@ -17,4 +17,9 @@ _Boletines del 18_2 al 27_
 _Boletines del 29_
 
 [Boletin 29](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin29)
+
 [Boletin 30](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin30)
+
+[Boletin 31](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin31)
+
+
