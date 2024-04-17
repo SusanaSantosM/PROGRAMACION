@@ -73,9 +73,11 @@ public class Conversor extends JFrame{
         entrada.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent ae) {
-               
-                gradoC = Double.parseDouble(entrada.getText());
-                gradoF = Double.parseDouble(entrada.getText());
+                if(entrada != null){
+                   gradoC = Double.parseDouble(entrada.getText());
+               }else if (entrada != null){
+                   gradoF = Double.parseDouble(entrada.getText());
+               }
             }
         });
         panel.add(entrada);
