@@ -8,16 +8,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Conversor extends JFrame{
     private JPanel panel;
-    private JButton celsius;
-    private JButton fahrenheit;
     private JTextField entrada;
     private JTextField salida;
-    private final double  temperatura = 0;
     private double gradoC;
     private double gradoF;
     
@@ -38,27 +36,33 @@ public class Conversor extends JFrame{
         panel.setBackground(Color.GRAY);
         
         //Etiqueta temperatura
-        JLabel  etTemperatura = new  JLabel("Ingresa la temperatura");
-        etTemperatura.setFont(new Font("arial", Font.BOLD,20));
+        JLabel  etTemperatura = new  JLabel("Temperatura");
+        etTemperatura.setFont(new Font("arial", Font.BOLD,17));
         etTemperatura.setForeground(Color.WHITE);
-        etTemperatura.setBounds(120, 50, 250, 40);
+        etTemperatura.setBounds(90, 50, 250, 20);
         panel.add(etTemperatura);
         
+        //Etiqueta Resultado
+        JLabel  etResultado = new  JLabel("Resultado");
+        etResultado.setFont(new Font("arial", Font.BOLD,17));
+        etResultado.setForeground(Color.WHITE);
+        etResultado.setBounds(300, 50, 250, 20);
+        panel.add(etResultado);
+        
         //Boton Celsius
-        celsius = new JButton("Celsius");
-        celsius.setBounds(100, 150, 80, 30);
+        JButton celsius = new JButton("Celsius");
+        celsius.setBounds(105, 150, 80, 30);
         panel.add(celsius);
         celsius.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent ae) {
                     deCelsiusAFahrenheit();
             }
-            
         });
         
         //Boton Farenheit
-        fahrenheit = new JButton("Fahrenheit");
-        fahrenheit.setBounds(300, 150, 120, 30);
+        JButton fahrenheit = new JButton("Fahrenheit");
+        fahrenheit.setBounds(290, 150, 120, 30);
         panel.add(fahrenheit);
         fahrenheit.addActionListener(new ActionListener(){
             @Override
@@ -67,43 +71,36 @@ public class Conversor extends JFrame{
             }
         });
         
-        //Entrada
+        //Entrada de datos
         entrada = new JTextField();
         entrada.setBounds(70,100,150,30);
-        entrada.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                if(entrada != null){
-                   gradoC = Double.parseDouble(entrada.getText());
-               }else if (entrada != null){
-                   gradoF = Double.parseDouble(entrada.getText());
-               }
-            }
-        });
         panel.add(entrada);
         
-        //Salida
+        //Salida de datos
         salida = new JTextField();
-        salida.setBounds(290, 100, 150, 30);
+        salida.setBounds(270, 100, 150, 30);
         panel.add(salida);
-        salida.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent ae) {
-                
-            }
-        });
-        
-        }
-    
-    public double deCelsiusAFahrenheit(){
-        if(gradoC<temperatura){
+    }
+ 
+    //Método para calcular la temperatura de Celsius a Fahrenheit
+    public void deCelsiusAFahrenheit(){
+        try{
+            gradoC = Double.parseDouble(entrada.getText());
             gradoF = (gradoC*9/5)+32;
-        } return gradoF;
+            salida.setText(String.valueOf(gradoF));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡Error! Ingresa el grado correctamente.");
+        }
     }
     
-    public double deFahrenheitACelsius(){
-        if(gradoF<temperatura){
-            gradoC=(gradoF-32)*5/9;
-        }return gradoC;
+    //Método para calcular la temperatura de Fahrenheit a Celsius
+    public void deFahrenheitACelsius(){
+        try{
+            gradoF = Double.parseDouble(entrada.getText());
+            gradoC = (gradoF-32)*5/9;
+            salida.setText(String.valueOf(gradoC));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡Error! Ingresa el grado correctamente.");
+        }
     }
 }
