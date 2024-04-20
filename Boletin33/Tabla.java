@@ -60,13 +60,13 @@ public class Tabla extends JFrame{
     //Colocamos la lista de clases
     String[] clases = {"dam1","dam2", "asir1","asir2", "daw1","daw2"};
     JComboBox listaClase = new JComboBox(clases);
-    listaClase.setBounds(300,50,80,20);
+    listaClase.setBounds(320,50,80,20);
     panel.add(listaClase);
 
     
     
     //Colocamos boton
-    JButton agregar = new JButton("AGREGAR TABLA");
+    JButton agregar = new JButton("AGREGAR");
     agregar.setFont(new Font("arial",Font.BOLD,10));
     agregar.setBounds(300,100,120,30);
     panel.add(agregar);
