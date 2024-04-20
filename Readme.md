@@ -17,9 +17,20 @@ _Boletines del 18_2 al 27_
 _Boletines del 29_
 
 [Boletin 29](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin29)
+>> GESTOR DE EVENTOS - CALCULADORA DE SUMA Y RESTA
+>> GESTOR DE EVENTOS - PANEL DE COLORES
 
 [Boletin 30](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin30)
+>> TEMPORIZADOR DE MENSAJES
+>> VALIDADOR DE NÚMEROS
 
 [Boletin 31](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin31)
+>> CALCULADORA SIMPLE
+>> PANEL DE MÚSICA
 
+[Boletin 32](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin32)
+>> CONVERSOR DE TEMPERATURA
+
+[Boletin 33](https://github.com/SusanaSantosM/Programacion/tree/main/Boletin33)
+>> TAREA TABLAS
 
