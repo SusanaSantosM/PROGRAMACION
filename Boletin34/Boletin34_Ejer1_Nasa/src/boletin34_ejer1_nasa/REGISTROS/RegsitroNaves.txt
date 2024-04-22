@@ -1,0 +1,7 @@
+NAVES DE LA MISIÓN
+
+nombre de la nave:
+
+tipo de nave:
+
+año de la nave:
